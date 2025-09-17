@@ -15,3 +15,14 @@ reactjs app.
 5. `git commit -m YOUR MSG"`
 6. `git push -u origin main`
 7. `git push`
+
+
+### Database options
+
+1.NoSQL - (MongoDB)
+
+
+
+velu20503531_db_user
+
+W71qb6BFiDMFeGsd

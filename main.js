@@ -1,13 +1,15 @@
 
 import express from "express"
 import Router from '../fisrt-api/Route.js'
+import connectDB from "./lib/db.js";
 const app = express()
 const port = 6969
 
 app.get('/', (req, res) => {
   res.json({msg:"Hello World!"});
 });
-
+// ConnectDB
+connectDB();
 // CRUD functionality of api
 // CLIENT -> MIDLEWARE -> SERVER
 app.use("/sample",Router)
