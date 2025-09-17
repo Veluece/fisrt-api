@@ -1,23 +1,15 @@
 import express from "express";
+import {MovieCreate, MovieDelete, MovieIndex, MovieUpdate} from "../fisrt-api/controller/controller.js"
 
 const Route = express.Router()
 
 //R - Reading
-Route.get("/sample",(req ,res)=>{
-    res.send("Gat all")
-})
-
+Route.get("/",MovieIndex);
 //C - creating
-Route.post("/sample",(req,res)=>{
-    res.send("Create all")
-})
+Route.post("/",MovieCreate);
 //U - updating
-Route.put("/sample/:id",(req,res)=>{
-    res.send("Update")
-})
+Route.put("/:id",MovieUpdate);
 //D - deleting
-Route.delete("/sample/:id",(req,res)=>{
-    res.send("delete")
-})
+Route.delete("/:id",MovieDelete);
 
 export default Route;
